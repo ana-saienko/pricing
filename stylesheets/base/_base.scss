@@ -14,24 +14,35 @@ html {
 // main styles for the layout
 
 body {
-	&.lock {
-		overflow: hidden;
-	}
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
 }
 
-
+.full-wrap {
+  min-height: 100vh;
+  background-color: #f7f7fe;
+  background-image: url(../../images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

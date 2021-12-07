@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Boats Shop</title>
+    <title>Pricing with toggle</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="stylesheets/main.css" />
 
@@ -12,7 +18,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <div class="full-wrap pricing">
+      <div class="container">
+        <h1 class="pricing__title">Our Pricing</h1>
 
+        <div class="pricing__toggle">
+          <label class="switch__label" for="option">Annually</label>
+
+          <label class="switch">
+            <input type="checkbox" id="option" checked="" />
+            <span class="slider round"></span>
+          </label>
+          
+          <label class="switch__label" for="option">Monthly</label>
+        </div>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

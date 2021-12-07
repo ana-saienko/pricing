@@ -93,27 +93,15 @@ html {
           box-sizing: inherit;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+}
+
 body.lock {
   overflow: hidden;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.page {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .container {
@@ -140,6 +128,15 @@ body.lock {
   }
 }
 
+.full-wrap {
+  min-height: 100vh;
+  background-color: #f7f7fe;
+  background-image: url(../../images/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -161,6 +158,99 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pricing {
+  padding-top: 71px;
+  padding-bottom: 103px;
+  text-align: center;
+}
+
+.pricing__title {
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #6e728e;
+  margin-bottom: 40px;
+}
+
+.switch__label {
+  font-size: 15px;
+  line-height: 28px;
+  color: #6e728e;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.pricing__toggle {
+  margin-bottom: 64px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  margin: 0 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border: 1px solid transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:hover {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.slider.round {
+  border-radius: 16px;
+}
+
+input:checked + .slider {
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border: 1px solid transparent;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 /*
