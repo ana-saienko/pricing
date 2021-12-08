@@ -402,6 +402,7 @@ input:checked + .slider:before {
 
 .btn-primary {
   font-size: 13px;
+  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
