@@ -23,20 +23,20 @@
         <h1 class="pricing__title">Our Pricing</h1>
 
         <div class="pricing__toggle">
-          <label class="switch__label" for="option">Annually</label>
+          <label class="switch__label" for="option" id="annual">Annually</label>
 
           <label class="switch">
-            <input type="checkbox" id="option" checked="" />
+            <input type="checkbox" id="option" checked/>
             <span class="slider round"></span>
           </label>
           
-          <label class="switch__label" for="option">Monthly</label>
+          <label class="switch__label" for="option" id="month">Monthly</label>
         </div>
 
         <div class="pricing__box">
           <div class="pricing__card card card--left">
             <div class="card__subtitle">Basic</div>
-            <h3 class="card__price"><span>$</span>19.99</h3>
+            <h3 class="card__price" id="basic" data-basic="19.99">$ 19.99</h3>
             <div class="card__bonuses">
               <div class="card__bonus">500 GB Storage</div>
               <div class="card__bonus">2 Users Allowed</div>
@@ -48,7 +48,7 @@
 
           <div class="pricing__card card card--center">
             <div class="card__subtitle">Professional</div>
-            <h3 class="card__price"><span>$</span>24.99</h3>
+            <h3 class="card__price" id="pro" data-basic="24.99">$ 24.99</h3>
             <div class="card__bonuses">
               <div class="card__bonus">1 TB Storage</div>
               <div class="card__bonus">5 Users Allowed</div>
@@ -60,7 +60,7 @@
 
           <div class="pricing__card card card--right">
             <div class="card__subtitle">Master</div>
-            <h3 class="card__price"><span>$</span>39.99</h3>
+            <h3 class="card__price" id="master" data-basic="39.99">$ 39.99</h3>
             <div class="card__bonuses">
               <div class="card__bonus">2 TB Storage</div>
               <div class="card__bonus">10 Users Allowed</div>
