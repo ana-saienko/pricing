@@ -192,6 +192,15 @@ body.lock {
 
 .pricing__toggle {
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -416,9 +425,12 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn-primary {
   font-size: 13px;
-  font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;

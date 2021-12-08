@@ -43,7 +43,7 @@ function calcPercent() {
 	return document.getElementById("basic").value = "$" +result.toFixed(0);
 }
 
-*/
+
 
 // сперва получаем значения цен в переменные
 // для этого берем айди и вытаскиваем число из датасета
@@ -97,3 +97,21 @@ checkedAnnual.addEventListener('click', (e) => {
 	calcPercentPro();
 	calcPercentMaster();
 });
+*/
+
+function myFunction() {
+	var x = document.querySelectorAll('.annual');
+	var y = document.querySelectorAll('.month');
+	for (var i = 0; i < x.length; i++) {
+	  if (document.getElementById("toggle").checked == true) {
+		 x[i].classList.add('hidden');
+		 y[i].classList.remove('hidden');
+	  } else {
+		 x[i].classList.remove('hidden');
+		 y[i].classList.add('hidden');
+	  }
+	}
+ }
+
+
+

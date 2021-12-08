@@ -28,6 +28,9 @@
 
 .pricing__toggle {
   margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 768px) {
     margin-bottom: 80px;
@@ -229,4 +232,7 @@ input:checked + .slider:before {
 
 .pricing__btn {
   margin: 0 auto;
+}
+.hidden {
+  display: none;
 }
