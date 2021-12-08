@@ -429,6 +429,11 @@ input:checked + .slider:before {
   display: none;
 }
 
+.card__price {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 .btn-primary {
   font-size: 13px;
   line-height: 16px;

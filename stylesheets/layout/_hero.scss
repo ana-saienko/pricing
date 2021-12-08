@@ -236,3 +236,7 @@ input:checked + .slider:before {
 .hidden {
   display: none;
 }
+
+.card__price {
+  transition: all .3s ease-in-out;
+}
